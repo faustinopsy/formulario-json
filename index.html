@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário cria json</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+<body>
+    <div id="app">
+  <form @submit.prevent="gerarJson">
+    <label for="id">ID:</label>
+    <input type="text" id="id" v-model="form.id">
+
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" v-model="form.titulo">
+
+    <label for="data">Data:</label>
+    <input type="date" id="data" v-model="form.data">
+
+    <label for="imagem">Imagem:</label>
+    <input type="file" id="imagem" @change="carregaArquivo">
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" v-model="form.descricao" @input="atualizaDescricaoCount" style="height: 184px; width: 978px;"></textarea>
+    <p>{{ comportamento.descricaoCount }} caracteres, {{ comportamento.descricaoPalavrasCount }} palavras</p>
+
+    <label for="conteudo">Conteúdo:</label>
+    <textarea id="conteudo" v-model="form.conteudo" @input="atualizaConteudoCount" style="height: 284px; width: 978px;"></textarea>
+    <p>{{ comportamento.conteudoCount }} caracteres, {{ comportamento.conteudoPalavrasCount }} palavras</p>
+
+    <button type="submit">Gerar</button>
+    <textarea readonly style="height: 884px; width: 578px;">{{ comportamento.saidaJson }}</textarea>
+  </form>
+
+
+</div>
+<script src='js/vue.min.js'></script>
+<script src='js/app.js'></script>
+</body>
+</html>

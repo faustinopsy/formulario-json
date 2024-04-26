@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
