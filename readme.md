@@ -7,7 +7,7 @@ Este repositório contém um formulário web desenvolvido com Vue.js, que permit
 ## Funcionalidades:
 
 - Entrada de dados: O formulário permite a inserção de informações como ID, título, data, imagem, descrição e conteúdo.
-- Contagem de caracteres e palavras: As áreas de texto para descrição e conteúdo exibem em tempo real a contagem de caracteres e palavras.
+- Contagem de caracteres e palavras (recurso do vue): As áreas de texto para descrição e conteúdo exibem em tempo real a contagem de caracteres e palavras.
 - Upload de imagem: Os usuários podem carregar uma imagem para o formulário, que será convertida em formato base64.
 - Geração de JSON: Ao clicar no botão "Gerar", o JSON é gerado com base nos dados inseridos no formulário e exibido em uma área de texto.
 Tecnologias Utilizadas:
